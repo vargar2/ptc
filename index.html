@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slick carousel with filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="grt-youtube-popup.css">
+  
+</head>
+
+<body>
+
+ <form class="filter">
+  <div class="filter-group">
+    <label for="technology">Technology:</label>
+    <select name="technology">
+      <option value="">All</option>
+      <option value=".java">java</option>
+      <option value=".c">c</option>
+      <option value=".mobile">mobile</option>
+    </select>
+    <button class="delete">x</button>
+  </div>
+</form>
+<div class="active-filter">
+  Active filter: <span class="filter-class">none</span>
+</div>
+<div class="slick">
+    <div class="slide java youtube-link" youtubeid="kK_UjBmHqQw">
+      Java @Research IT<img src="1.png">   
+    </img>
+    </div>
+    <div class="slide c java youtube-link" youtubeid="kK_UjBmHqQw">C Java @ RFT<img src="2.png"/></div>
+    
+    <div class="slide mobile youtube-link" youtubeid="kK_UjBmHqQw">>Mobile for Barclays <img src="3.png"/></div>
+    <div class="slide java youtube-link" youtubeid="kK_UjBmHqQw">Java for Barclays <img src="4.png"/></div>
+    <div class="slide c mobile youtube-link" youtubeid="kK_UjBmHqQw">Mobile C for Barclays <img src="5.png"/></div>
+    <div class="slide java mobile c youtube-link" youtubeid="kK_UjBmHqQw">Java C Mobile for Barclays <img src="6.png"/></div>
+    <div class="slide mobile c youtube-link" youtubeid="kK_UjBmHqQw">C Mobile for Barclays <img src="7.png"/></div>
+    <div class="slide java c youtube-link" youtubeid="kK_UjBmHqQw">Java C Dev for Barclays <img src="8.png"/></div>
+    <div class="slide c youtube-link" youtubeid="kK_UjBmHqQw">C for Barclays <img src="9.png"/></div>
+</div>
+<div class="modal" id="video-modal">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+    		<!-- GRT Youtube Popup -->
+		<script src="grt-youtube-popup.js"></script>
+
+		<!-- Initialize GRT Youtube Popup plugin -->
+		<script>
+			// Demo video 1
+			$(".youtube-link").grtyoutube({
+				autoPlay:true,
+				theme: "dark"
+			});
+
+			// Demo video 2
+			$(".youtube-link-dark").grtyoutube({
+				autoPlay:false,
+				theme: "light"
+			});
+		</script>
+
+
+</body>
+
+</html>
