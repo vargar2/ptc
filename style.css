@@ -1,0 +1,33 @@
+
+/** Just some styling to make it more readable. */
+
+
+html {
+  margin: 1rem;
+}
+
+.filter {
+  margin: 1rem 0;
+}
+
+.active-filter {
+  margin: 1rem 0;
+}
+
+.slick .slide {
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  border: 1px solid gray;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slick .slide img {
+  width: 100%;
+  text-align: center;
+}
+
+
